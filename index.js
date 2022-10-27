@@ -9,6 +9,9 @@ const modalBody = document.getElementById("modal-body");
 const content = document.getElementById('content');
 window.товары = [];
 
+
+console.log("тест")
+
 window.корзинаТоваров = [];
 const сделатьЗапрос = async ()=>{
     let товары = await fetch('https://fakestoreapi.com/products/');
@@ -19,6 +22,7 @@ const сделатьЗапрос = async ()=>{
         product.show(false, content);
     }
 }
+
 
 сделатьЗапрос();
 button.addEventListener('click',()=>{
