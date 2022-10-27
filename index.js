@@ -12,6 +12,8 @@ window.товары = [];
 
 console.log("тест")
 
+
+
 window.корзинаТоваров = [];
 const сделатьЗапрос = async ()=>{
     let товары = await fetch('https://fakestoreapi.com/products/');
